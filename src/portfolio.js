@@ -24,7 +24,7 @@ const illustration = {
 
 const greeting = {
   username: "Arnav Agarwal",
-  title: "Hi all, I'm Arnav",
+  title: "Hi all, I'm Arnav Agarwal",
   subTitle: emoji(
     "A passionate Software developer focusing in Machine Learning and Generative AI using Pytorch / Tensorflow libraries and also explored full stack software development with JavaScript / Reactjs / Nodejs / React Native / Springboot / Kubernetes and some other cool libraries and frameworks. 🚀"
   ),
@@ -149,7 +149,7 @@ const educationInfo = {
       logo: require("./assets/images/uf-logo.png"),
       subHeader: "Master of Science in Computer Science",
       duration: "August 2023 - Dec 2024",
-      // desc: "Appointed as Graduate Research Assistant and and published 3 papers.",
+      desc: "CGPA: 3.7/4",
       descBullets: [
         "Advanced Data Science",
         "Software Engineering",
@@ -164,7 +164,7 @@ const educationInfo = {
       logo: require("./assets/images/Manipal_University_Jaipur_logo.png"),
       subHeader: "Bachelor of Science in Computer Science",
       duration: "Aug 2019 - May 2023",
-      // desc: "Ranked top 10% in the program. Published 2 research papers."
+      desc: "CGPA: 8.85/10",
       descBullets: [
         "Artificial Intelligence & Machine Learning",
         "Software Development Fundamentals",
