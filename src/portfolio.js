@@ -28,7 +28,7 @@ const greeting = {
   subTitle: emoji(
     "A passionate Software developer focusing in Machine Learning and Generative AI using Pytorch / Tensorflow libraries and also explored full stack software development with JavaScript / Reactjs / Nodejs / React Native / Springboot / Kubernetes and some other cool libraries and frameworks. 🚀"
   ),
-  resumeLink: "/resume.pdf", // Set to empty to hide the button
+  resumeLink: "https://drive.google.com/file/d/1hIZd4Gywg01ZMPiYlN2SkF72DuvlcHqB/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
