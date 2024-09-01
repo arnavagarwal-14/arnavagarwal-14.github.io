@@ -105,6 +105,8 @@
   flex-direction: column;
   gap: 1rem;
   text-align: center;
+  list-style-type: none;
+
 }
 
 .education-text-duration {
@@ -117,7 +119,17 @@
 .education-text-desc {
   margin: 0;
   font-size: 16px;
+  text-align: center;
 }
+
+.education-text-bullets > ul {
+  list-style-type: none;
+  max-width: 100%;
+  margin: 0;
+  text-align: center;
+  padding: 0%;
+}
+
 
 /* Media Query */
 
@@ -169,6 +181,7 @@
     margin-right: 0;
   }
   .education-text-bullets > ul {
+    list-style-type: none;
     max-width: 80%;
     margin: auto;
   }

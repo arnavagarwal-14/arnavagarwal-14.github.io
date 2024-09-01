@@ -5,6 +5,8 @@
   height: auto;
   width: 250px;
   border-radius: 10px;
+  object-fit: contain;
+
 }
 .card-title {
   color: $titleColor !important;

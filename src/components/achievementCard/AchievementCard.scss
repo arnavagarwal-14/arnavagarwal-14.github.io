@@ -4,6 +4,7 @@
   max-width: 100%;
   height: auto;
   width: 250px;
+  object-fit: contain;
 }
 .card-title {
   color: $titleColor;
@@ -62,7 +63,7 @@
   img {
     height: 8rem;
     width: 8rem;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 10px;
     border-radius: 10px;
     overflow: hidden;

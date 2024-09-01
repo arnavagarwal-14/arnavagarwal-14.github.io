@@ -4,13 +4,16 @@
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import pytorchImg from "./assets/images/pytorch-icon.png"; // Rename to your file name for custom animation
+import tensorflowImg from "./assets/images/tensorflow-logo.png"; // Rename to your file name for custom animation
+import springbootImg from "./assets/images/springboot-logo.png"; // Rename to your file name for custom animation
 
 // Splash Screen
 
 const splashScreen = {
   enabled: true, // set false to disable splash screen
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 1000 // Set animation duration as per your animation
 };
 
 // Summary And Greeting Section
@@ -20,10 +23,10 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Sunny Dhama",
-  title: "Hi all, I'm Sunny",
+  username: "Arnav Agarwal",
+  title: "Hi all, I'm Arnav",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Software developer focusing in Machine Learning and Generative AI using Pytorch / Tensorflow libraries and also explored full stack software development with JavaScript / Reactjs / Nodejs / React Native / Springboot / Kubernetes and some other cool libraries and frameworks. 🚀"
   ),
   resumeLink: "/resume.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -32,15 +35,15 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/blackwolf08",
-  linkedin: "https://www.linkedin.com/in/sunnydhama/",
-  gmail: "dhamasunny98@gmail.com",
-  gitlab: "https://gitlab.com/dhamasunny98",
-  facebook: "https://www.facebook.com/beingsunnydhama",
-  medium: "https://medium.com/@dhamasunny98",
-  stackoverflow: "https://stackoverflow.com/users/10656906/sunny-dhama",
-  instagram: "https://instagram.com/sunnydhama_",
-  twitter: "https://twitter.com/sunny_dhama_",
+  github: "https://github.com/arnavagarwal-14/arnavagarwal-14.github.io",
+  linkedin: "https://www.linkedin.com/in/arnavagarwal14/",
+  gmail: "arnav.agarwalpro@gmail.com",
+  // gitlab: "https://gitlab.com/dhamasunny98",
+  // facebook: "https://www.facebook.com/beingsunnydhama",
+  // medium: "https://medium.com/@dhamasunny98",
+  // stackoverflow: "https://stackoverflow.com/users/10656906/sunny-dhama",
+  instagram: "https://instagram.com/arnavagarwal__",
+  // twitter: "https://twitter.com/sunny_dhama_",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -50,21 +53,33 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "CRAZY ML & AI DEVELOPER WHO WANTS TO EXPLORE EVERY FRAMEWORK",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("⚡ Develop and implement advanced AI and machine learning models for data analysis and optimization."),
+    emoji("⚡ Build and enhance scalable web applications by integrating AI functionalities and utilizing cloud platforms like AWS and Azure."),
+    emoji("⚡ Design full-stack web solutions using Spring Boot, Docker, Kubernetes, and RESTful APIs, ensuring robustness and scalability.")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
+    {
+      skillName: "python",
+      fontAwesomeClassname: "fab fa-python",
+    },
+    {
+      skillName: "pytorch",
+      fontAwesomeClassname: "fab",
+      className: "generic-icon",
+      image:pytorchImg
+    },
+    {
+      skillName: "tensorflow",
+      fontAwesomeClassname: "fab",
+      className: "generic-icon",
+      image:tensorflowImg
+    },
     {
       skillName: "html-5",
       fontAwesomeClassname: "fab fa-html5"
@@ -73,10 +88,10 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "css3",
       fontAwesomeClassname: "fab fa-css3-alt"
     },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
+    // {
+    //   skillName: "sass",
+    //   fontAwesomeClassname: "fab fa-sass"
+    // },
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
@@ -89,13 +104,19 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "nodejs",
       fontAwesomeClassname: "fab fa-node"
     },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
+    // {
+    //   skillName: "swift",
+    //   fontAwesomeClassname: "fab fa-swift"
+    // },
     {
       skillName: "npm",
       fontAwesomeClassname: "fab fa-npm"
+    },
+    {
+      skillName: "Spring Boot",
+      fontAwesomeClassname: "fab",
+      className: "generic-icon",
+      image:springbootImg
     },
     {
       skillName: "sql-database",
@@ -105,14 +126,11 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "aws",
       fontAwesomeClassname: "fab fa-aws"
     },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
+    // {
+    //   skillName: "firebase",
+    //   fontAwesomeClassname: "fas fa-fire"
+    // },
+   
     {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
@@ -130,37 +148,32 @@ const educationInfo = {
       schoolName: "University of Florida",
       logo: require("./assets/images/uf-logo.png"),
       subHeader: "Master of Science in Computer Science",
-      duration: "August 2022 - May 2024",
-      desc: "Appointed as Graduate Research Assistant and and published 3 papers."
-      // descBullets: [
-      //   "Distributed Operating Systems Principles",
-      //   "Database Management Systems",
-      //   "Computer Network Security",
-      //   "Advanced Data Structures and Algorithms",
-      //   "Software Engineering",
-      //   "Software Testing and Quality Assurance"
-      // ]
+      duration: "August 2023 - Dec 2024",
+      // desc: "Appointed as Graduate Research Assistant and and published 3 papers.",
+      descBullets: [
+        "Advanced Data Science",
+        "Software Engineering",
+        "Distributed Operating Systems Principles",
+        "Advanced Data Structures and Algorithms",
+        "Database Management Systems",
+        "Computer Network Security"
+      ]
     },
     {
-      schoolName: "Jaypee Institute of Information Technology",
-      logo: require("./assets/images/jiit-logo.jpeg"),
+      schoolName: "Manipal University Jaipur",
+      logo: require("./assets/images/Manipal_University_Jaipur_logo.png"),
       subHeader: "Bachelor of Science in Computer Science",
-      duration: "July 2017 - May 2021",
-      desc: "Ranked top 10% in the program. Published 2 research papers."
-      // descBullets: [
-      //   "Software Development Fundamentals",
-      //   "Data Structures and Algorithms",
-      //   "Object Oriented Programming",
-      //   "Database Management Systems",
-      //   "Operating Systems",
-      //   "Computer Networks",
-      //   "Web Technologies",
-      //   "Software Engineering",
-      //   "Web Security",
-      //   "Mobile Application Development",
-      //   "Artificial Intelligence",
-      //   "Machine Learning"
-      // ]
+      duration: "Aug 2019 - May 2023",
+      // desc: "Ranked top 10% in the program. Published 2 research papers."
+      descBullets: [
+        "Artificial Intelligence & Machine Learning",
+        "Software Development Fundamentals",
+        "Data Structures and Algorithms",
+        "Object Oriented Programming",
+        "Database Management Systems",
+        "Software Engineering & Operating Systems",
+        "Computer Networks",
+      ]
     }
   ]
 };
@@ -171,12 +184,24 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      Stack: "Python", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
+      Stack: "Pytorch", //Insert stack or technology you have experience in
+      progressPercentage: "90%" //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "Tensorflow", //Insert stack or technology you have experience in
+      progressPercentage: "80%" //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      progressPercentage: "70%" //Insert relative proficiency in percentage
+    },
+    {
       Stack: "Backend",
-      progressPercentage: "70%"
+      progressPercentage: "60%"
     },
     {
       Stack: "DevOps",
@@ -192,11 +217,11 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Graduate Research Assistant",
-      company: "University of Florida",
-      companylogo: require("./assets/images/uf-logo.png"),
-      date: "October 2022 - Present",
-      desc: "At the University of Florida, I contributed to a transformative educational platform project with a focus on middle school science, backed by a significant NSF grant. My role encompassed enhancing platform efficiency and pioneering real-time health metric sharing for sports via Flutter apps."
+      role: "Generative AI ML Intern",
+      company: "Skan AI",
+      companylogo: require("./assets/images/skan_ai_logo.jpeg"),
+      date: "May 2024 - Aug 2024",
+      desc: "During my internship at Skan AI I led the development of a generative transformer model, achieving a 25% improvement in accuracy. This model featured KAN layers for noise reduction and advanced data processing techniques, generating optimal task sequences for user workflows. I also implemented advanced clustering, mixed-precision training, and memory optimization, significantly enhancing model efficiency and analytical outcomes."
       // descBullets: [
       //   "Spearheaded the development and optimization of a React and Django-based educational platform, impacting over 100 students.",
       //   "Enhanced platform efficiency, achieving a 30% reduction in computation on virtual cores using Docker and ALB.",
@@ -204,28 +229,28 @@ const workExperiences = {
       // ]
     },
     {
-      role: "Software Engineer",
-      company: "Scaler Academy",
-      companylogo: require("./assets/images/scaler-logo.png"),
-      date: "Feburary 2021 - August 2022",
-      desc: "In my tenure at Scaler Academy, I led the creation of a React-based code editor and a novel JavaScript video streaming solution, directly contributing to increased user engagement and streamlined instructor workflows. My work also involved optimizing web performance and building scalable API solutions."
+      role: "Summer Research Intern",
+      company: "IIT Roorkee",
+      companylogo: require("./assets/images/iitr-logo.jpeg"),
+      date: "Jul 2021 - Sept 2021",
+      desc: "During my Summer Research Internship at IIT Roorkee I first-authored a research paper on deep learning for COVID-19 X-ray image classification, alongside an IIT-Roorkee Professor. We enhanced the model’s accuracy by 10% and reduced its processing time by 20% compared to existing methods. Additionally, I developed an accelerated diagnosis model that improved efficiency by 50%, offering a significant advancement over conventional approaches."
       // descBullets: [
       //   "Led the development of a React-based Monaco editor code editor, resulting in 7 million yearly code submissions.",
       //   "Engineered a JavaScript-based video streaming solution, enhancing user engagement by 50% and reducing instructor load.",
       //   "Optimized JavaScript and Webpack configurations, reducing dashboard load times significantly."
       // ]
     },
-    {
-      role: "Software Engineer Intern",
-      company: "Remedico",
-      companylogo: require("./assets/images/remedico-logo.png"),
-      date: "May 2020 - August 2020",
-      desc: "At Remedico, I improved the codebase by developing reusable React components and updating the Doctor's onboarding portal with React Native, focusing on UI enhancements and code efficiency."
-      // descBullets: [
-      //   "Developed reusable React components, reducing codebase by 30% and improving code quality.",
-      //   "Modernized the Doctor's onboarding portal using React Native, enhancing user interface and experience."
-      // ]
-    }
+    // {
+    //   role: "Software Engineer Intern",
+    //   company: "Remedico",
+    //   companylogo: require("./assets/images/remedico-logo.png"),
+    //   date: "May 2020 - August 2020",
+    //   desc: "At Remedico, I improved the codebase by developing reusable React components and updating the Doctor's onboarding portal with React Native, focusing on UI enhancements and code efficiency."
+    //   // descBullets: [
+    //   //   "Developed reusable React components, reducing codebase by 30% and improving code quality.",
+    //   //   "Modernized the Doctor's onboarding portal using React Native, enhancing user interface and experience."
+    //   // ]
+    // }
   ]
 };
 
@@ -234,51 +259,51 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "Some big projects that I created and worked on.",
   projects: [
     {
-      image: require("./assets/images/scaler-logo.png"),
-      projectName: "Scaler Academy's Code Editor",
+      image: require("./assets/images/eventsigator-logo.webp"),
+      projectName: "Eventsigator",
       projectDesc:
-        "A web-based code editor for students to practice coding problems and submit their solutions.",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://www.interviewbit.com/problems/text-editor/"
-        }
-        //  you can add extra buttons here.
-      ]
+        "Event finder using microsoft power platform and OpenAI's GPT-4-Turbo API",
+      // footerLink: [
+      //   {
+      //     name: "Visit Website",
+      //     url: "https://www.interviewbit.com/problems/text-editor/"
+      //   }
+      //   //  you can add extra buttons here.
+      // ]
     },
     {
-      image: require("./assets/images/nlp4science-logo.png"),
-      projectName: "NLP Based Educational Platform",
+      image: require("./assets/images/convogenie-logo.png"),
+      projectName: "ConvoGenie",
       projectDesc:
-        "A transformative educational platform project with a focus on middle school science, backed by a significant NSF grant.",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://app.nlp4science.org"
-        }
-      ]
+        "Generative AI Conversational Avatar with Advanced Content Summarization",
+      // footerLink: [
+      //   {
+      //     name: "Visit Website",
+      //     url: "https://app.nlp4science.org"
+      //   }
+      // ]
     },
     {
-      image: require("./assets/images/amby-logo.png"),
-      projectName: "Amby",
+      image: require("./assets/images/motionspeak-logo.png"),
+      projectName: "MotionSpeak",
       projectDesc:
-        "An educational platform project with a focus on middle school science, to build AI chatbots with dialogflow.",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://amby.campdialogs.org"
-        }
-      ]
+        "Sign language transcriber using machine learning.",
+      // footerLink: [
+      //   {
+      //     name: "Visit Website",
+      //     url: "https://amby.campdialogs.org"
+      //   }
+      // ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -288,50 +313,50 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  title: emoji("Certifications 🏆 "),
+  // subtitle:
+  //   "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
   achievementsCards: [
     {
-      title: "Microsoft Learn Student Ambassador",
+      title: "Microsoft certified Azure / Azure AI fundamentals",
       subtitle:
-        "Selected as Microsoft Learn Student Ambassador for the year 2021-2022.",
-      image: require("./assets/images/microsoft-logo.jpeg"),
-      imageAlt: "Microsoft Learn Student Ambassador Logo",
+        "Certified with Microsoft Azure and Azure AI fundamentals.",
+      image: require("./assets/images/Microsoft_Azure.png"),
+      imageAlt: "Microsoft Azure Logo",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://studentambassadors.microsoft.com/certificate/80a87818-8f77-4bbd-8dc6-c39816e76256"
+          name: "Certifications",
+          url: "https://drive.google.com/file/d/10WtRWpcjgA0lPI1cBfBUw6Zm6kzBu_3d/view?usp=sharing"
         }
       ]
     },
     {
-      title: "DSC Lead",
+      title: "Google Cloud Computing Fundamentals",
       subtitle:
-        "Appointed as DSC Lead for the year 2021-2022 at Jaypee Institute of Information Technology, Noida, India.",
-      image: require("./assets/images/dsc-logo.png"),
-      imageAlt: "Google Assistant Action Logo",
+        "Certified in 1. Cloud Computing Fundamentals, 2. Infrastructure in Google Cloud, 3. Networking and Security in Google Cloud, 4. Data, ML, and AI in Google Cloud",
+      image: require("./assets/images/gcp-logo.png"),
+      imageAlt: "Google Cloud Platform Logo",
       footerLink: [
         {
-          name: "View Events",
-          url: "https://www.linkedin.com/posts/sunnydhama_dsc-gcp-google-activity-6585913450621480960-KIV0?utm_source=share&utm_medium=member_desktop"
+          name: "Certifications",
+          url: "https://drive.google.com/file/d/1orsvoNiSQEf6pIjotef7viwiFwhYQ8vb/view?usp=sharing"
         }
       ]
     },
-    {
-      title: "Microsoft 'Week of AI' Participant",
-      subtitle:
-        "Participated in Microsoft 'Week of AI' and completed the course.",
-      image: require("./assets/images/microsoft-logo.jpeg"),
-      imageAlt: "Microsoft 'Week of AI' Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://www.credential.net/86c17b4b-b581-402a-a6c9-0889c53c643f#gs.5gzh54"
-        }
-      ]
-    }
+    // {
+    //   title: "Microsoft 'Week of AI' Participant",
+    //   subtitle:
+    //     "Participated in Microsoft 'Week of AI' and completed the course.",
+    //   image: require("./assets/images/Microsoft_Azure.png"),
+    //   imageAlt: "Microsoft 'Week of AI' Logo",
+    //   footerLink: [
+    //     {
+    //       name: "Certification",
+    //       url: "https://www.credential.net/86c17b4b-b581-402a-a6c9-0889c53c643f#gs.5gzh54"
+    //     }
+    //   ]
+    // }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -344,7 +369,7 @@ const blogSection = {
     "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -363,7 +388,7 @@ const talkSection = {
         "https://www.linkedin.com/posts/build-and-scale_webapps-react-reactnative-activity-6640689248817254400-PbJg?utm_source=share&utm_medium=member_desktop"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -374,22 +399,22 @@ const podcastSection = {
 
   // Please Provide with Your Podcast embeded Link
   podcast: ["https://www.youtube.com/embed/oCMFRl6a9t4"],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+1-3523287352",
-  email_address: "dhamasunny98@gmail.com"
+  number: "+1-3527094251",
+  email_address: "arnav.agarwalpro@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
-  userName: "sunny_dhama_", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  userName: "arnavagarwal_", //Replace "twitter" with your twitter username without @
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
