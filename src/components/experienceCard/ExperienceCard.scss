@@ -103,6 +103,14 @@
 .dark-mode-text {
   color: $textColorDark !important;
 }
+.experience-text-location { // New class for location text
+  text-align: center;
+  color: $textColor;
+  font-size: 20px;
+  margin: 0px;
+  padding-top: 1rem; // Adjust the space between role and location
+  font-weight: 600;
+}
 .experience-text-date {
   text-align: center;
   color: $textColor;

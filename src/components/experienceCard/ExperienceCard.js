@@ -57,6 +57,17 @@ export default function ExperienceCard({cardInfo, isDark}) {
         >
           {cardInfo.role}
         </h5>
+        {cardInfo.location && ( // Render location if it exists
+          <h5
+            className={
+              isDark
+                ? "experience-text-location dark-mode-text"
+                : "experience-text-location"
+            }
+          >
+            {cardInfo.location}
+          </h5>
+        )}
         <h5
           className={
             isDark

@@ -2,6 +2,10 @@
 
 // To change portfolio colors globally go to the  _globalColor.scss file
 
+//yarn build
+//yarn add gh-pages --save-dev
+//npm run deploy
+
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 import pytorchImg from "./assets/images/pytorch-icon.png"; // Rename to your file name for custom animation
@@ -28,7 +32,7 @@ const greeting = {
   subTitle: emoji(
     "A passionate Software developer focusing in Machine Learning and Generative AI using Pytorch / Tensorflow libraries and also explored full stack software development with JavaScript / Reactjs / Nodejs / React Native / Springboot / Kubernetes and some other cool libraries and frameworks. 🚀"
   ),
-  resumeLink: "https://drive.google.com/file/d/1hIZd4Gywg01ZMPiYlN2SkF72DuvlcHqB/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: "https://arnav-agarwal.com/resume.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -149,20 +153,20 @@ const educationInfo = {
       logo: require("./assets/images/uf-logo.png"),
       subHeader: "Master of Science in Computer Science",
       duration: "August 2023 - Dec 2024",
-      desc: "CGPA: 3.7/4",
+      desc: "CGPA: 3.70/4.0",
       descBullets: [
         "Advanced Data Science",
         "Software Engineering",
         "Distributed Operating Systems Principles",
         "Advanced Data Structures and Algorithms",
         "Database Management Systems",
-        "Computer Network Security"
+        "Computer Networks"
       ]
     },
     {
       schoolName: "Manipal University Jaipur",
       logo: require("./assets/images/Manipal_University_Jaipur_logo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
+      subHeader: "Bachelor of Technology in Computer Science",
       duration: "Aug 2019 - May 2023",
       desc: "CGPA: 8.85/10",
       descBullets: [
@@ -219,6 +223,7 @@ const workExperiences = {
     {
       role: "Generative AI ML Intern",
       company: "Skan AI",
+      location: "CA, USA",
       companylogo: require("./assets/images/skan_ai_logo.jpeg"),
       date: "May 2024 - Aug 2024",
       desc: "During my internship at Skan AI I led the development of a generative transformer model, achieving a 25% improvement in accuracy. This model featured KAN layers for noise reduction and advanced data processing techniques, generating optimal task sequences for user workflows. I also implemented advanced clustering, mixed-precision training, and memory optimization, significantly enhancing model efficiency and analytical outcomes."
@@ -231,6 +236,7 @@ const workExperiences = {
     {
       role: "Summer Research Intern",
       company: "IIT Roorkee",
+      location: "India",
       companylogo: require("./assets/images/iitr-logo.jpeg"),
       date: "Jul 2021 - Sept 2021",
       desc: "During my Summer Research Internship at IIT Roorkee I first-authored a research paper on deep learning for COVID-19 X-ray image classification, alongside an IIT-Roorkee Professor. We enhanced the model’s accuracy by 10% and reduced its processing time by 20% compared to existing methods. Additionally, I developed an accelerated diagnosis model that improved efficiency by 50%, offering a significant advancement over conventional approaches."
@@ -327,7 +333,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certifications",
-          url: "https://drive.google.com/file/d/10WtRWpcjgA0lPI1cBfBUw6Zm6kzBu_3d/view?usp=sharing"
+          url: "https://arnav-agarwal.com/microsoftCertificate.pdf"
         }
       ]
     },
@@ -340,23 +346,23 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certifications",
-          url: "https://drive.google.com/file/d/1orsvoNiSQEf6pIjotef7viwiFwhYQ8vb/view?usp=sharing"
+          url: "https://www.cloudskillsboost.google/public_profiles/9d93d28a-c059-4436-b544-82b514dbaef1"
         }
       ]
     },
-    // {
-    //   title: "Microsoft 'Week of AI' Participant",
-    //   subtitle:
-    //     "Participated in Microsoft 'Week of AI' and completed the course.",
-    //   image: require("./assets/images/Microsoft_Azure.png"),
-    //   imageAlt: "Microsoft 'Week of AI' Logo",
-    //   footerLink: [
-    //     {
-    //       name: "Certification",
-    //       url: "https://www.credential.net/86c17b4b-b581-402a-a6c9-0889c53c643f#gs.5gzh54"
-    //     }
-    //   ]
-    // }
+    {
+      title: "Even more Certifications!",
+      subtitle:
+        "Certificates in Python, Data Science, SQL, UI/UX and more on the way.",
+      image: require("./assets/images/certificate-icon.png"),
+      imageAlt: "Certificates Alt Image",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://arnav-agarwal.com/certificatesMerged.pdf"
+        }
+      ]
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
