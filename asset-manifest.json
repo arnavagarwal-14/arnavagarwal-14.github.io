@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.a1751e76.css",
-    "main.js": "/static/js/main.3685d706.js",
+    "main.js": "/static/js/main.912467d2.js",
     "static/css/64.2c3b5fe7.chunk.css": "/static/css/64.2c3b5fe7.chunk.css",
     "static/js/64.89e9f0dc.chunk.js": "/static/js/64.89e9f0dc.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/static/css/769.b3cbb36b.chunk.css",
     "static/js/769.97546a90.chunk.js": "/static/js/769.97546a90.chunk.js",
-    "static/media/Arnav.jpeg": "/static/media/Arnav.360fa546a7d3a6bb6282.jpeg",
+    "static/media/Arnav.jpeg": "/static/media/Arnav.73b91c3e33344ae9d72c.jpeg",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/eventsigator-logo.webp": "/static/media/eventsigator-logo.5a88a6c425d2b086fea7.webp",
     "static/media/uf-logo.png": "/static/media/uf-logo.f8673b83c44297301d6d.png",
@@ -27,7 +27,7 @@
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.a1751e76.css.map": "/static/css/main.a1751e76.css.map",
-    "main.3685d706.js.map": "/static/js/main.3685d706.js.map",
+    "main.912467d2.js.map": "/static/js/main.912467d2.js.map",
     "64.2c3b5fe7.chunk.css.map": "/static/css/64.2c3b5fe7.chunk.css.map",
     "64.89e9f0dc.chunk.js.map": "/static/js/64.89e9f0dc.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/static/css/769.b3cbb36b.chunk.css.map",
@@ -35,6 +35,6 @@
   },
   "entrypoints": [
     "static/css/main.a1751e76.css",
-    "static/js/main.3685d706.js"
+    "static/js/main.912467d2.js"
   ]
 }
