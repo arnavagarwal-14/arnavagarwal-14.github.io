@@ -3,9 +3,10 @@ import "./App.scss";
 import Main from "./containers/Main";
 
 function App() {
-  return (
+  const hekk = 'd';
+    return (
     <div>
-      <Main />
+      <Main hekk={hekk}  />
     </div>
   );
 }

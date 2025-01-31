@@ -23,7 +23,8 @@ import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
 
-const Main = () => {
+const Main = ({hekk}) => {
+  console.log(hekk);
   const [isDark, setIsDark] = useLocalStorage("isDark", true);
   const [isShowingSplashAnimation, setIsShowingSplashAnimation] =
     useState(true);

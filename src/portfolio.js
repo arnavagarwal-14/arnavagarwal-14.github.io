@@ -42,12 +42,12 @@ const socialMediaLinks = {
   github: "https://github.com/arnavagarwal-14/",
   linkedin: "https://www.linkedin.com/in/arnavagarwal14/",
   gmail: "arnav.agarwalpro@gmail.com",
-  // gitlab: "https://gitlab.com/dhamasunny98",
-  // facebook: "https://www.facebook.com/beingsunnydhama",
-  // medium: "https://medium.com/@dhamasunny98",
-  // stackoverflow: "https://stackoverflow.com/users/10656906/sunny-dhama",
+  // gitlab: ,
+  // facebook: ,
+  // medium: ",
+  // stackoverflow: ,
   instagram: "https://instagram.com/arnavagarwal__",
-  // twitter: "https://twitter.com/sunny_dhama_",
+  // twitter: ,
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
